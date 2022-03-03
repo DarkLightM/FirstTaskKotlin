@@ -20,12 +20,29 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/textView"
-        app:layout_constraintLeft_toLeftOf="@id/textView"/>
+        app:layout_constraintLeft_toLeftOf="@id/textView"
+        app:layout_constraintRight_toRightOf="@id/textView"/>
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/objNameView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/nameTextView"
-        app:layout_constraintLeft_toLeftOf="@id/nameTextView"/>
+        app:layout_constraintLeft_toLeftOf="@id/nameTextView"
+        app:layout_constraintRight_toRightOf="@id/nameTextView"/>
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/enterText"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/objNameView"
+        app:layout_constraintLeft_toLeftOf="@id/objNameView"
+        app:layout_constraintRight_toRightOf="@id/objNameView"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/okButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/enterText"
+        app:layout_constraintLeft_toLeftOf="@id/enterText"
+        app:layout_constraintRight_toRightOf="@id/enterText"
+        android:text="OK"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
